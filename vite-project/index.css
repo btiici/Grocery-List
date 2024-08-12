@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    display: flex;
+}
+
+.body{
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer{
+    background-color: blue;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    width: 90%;
+}
+
+li{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+li input[type="checkbox"]{
+    text-align: center;
+    width: 2.5rem;
+    width: 48px;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+li > label {
+    font-size: 1rem;
+    flex-grow: 1;
+    color: black;
+}
+
+li svg{
+    width: 48px;
+    height: 36px;
+    color: steelblue;
+    cursor: pointer;
+}
+
+li svg:hover,
+li svg:focus{
+    color: red;
+    outline: none;
+}
+
+.Additem{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+}
+
+.Additem label{
+    position: absolute;
+    left: -99999px;
+}
+
+.Additem input[type="text"]{
+    height: 2.5rem;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: auto;
+}
+
+.Additem button{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.Additem button:hover,
+.Additem button:focus{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.search label{
+    position: absolute;
+    left: -99999px;
+}
+
+.search input[type="text"]{
+    height: 2.5rem;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
